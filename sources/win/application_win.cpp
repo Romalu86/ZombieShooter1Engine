@@ -188,13 +188,13 @@ namespace as1 { namespace win
         constexpr std::uint32_t kShellTogglePause = 0x00000001u;
         constexpr std::uint32_t kShellForceFrame = 0x00000002u;
         constexpr std::uint32_t kShellDrawLabels = 0x00000004u;
-        constexpr std::uint32_t kShellDispatchOverlayList = 0x00000008u;
+        constexpr std::uint32_t kShellDrawRelations = 0x00000008u;
 
 
         constexpr std::uint32_t kDebugDrawTerrainGrid = 0x00000800u;
-        constexpr std::uint32_t kDebugDrawCurrentSprite = 0x00001000u;
-        constexpr std::uint32_t kDebugDrawAuxiliaryList = 0x00002000u;
-        constexpr std::uint32_t kDebugDrawScrollBox = 0x00004000u;
+        constexpr std::uint32_t kDebugDrawSelectedSpriteInfo = 0x00001000u;
+        constexpr std::uint32_t kDebugDrawRouteMap = 0x00002000u;
+        constexpr std::uint32_t kDebugDrawGroupNumbers = 0x00004000u;
         constexpr std::uint32_t kDebugDrawSpriteBuckets = 0x00008000u;
         constexpr std::uint32_t kDebugShowSoundCount = 0x00010000u;
         constexpr std::uint32_t kDebugShowFps = 0x00020000u;
@@ -1363,7 +1363,7 @@ namespace as1 { namespace win
             case 'I': setFlags(flags() ^ 0x00001000u); break;
             case 'H': toggleFlag(shellFlagsStorage(this), kShellDrawLabels); break;
             case 'R': setFlags(flags() ^ 0x00002000u); break;
-            case 'G': toggleFlag(shellFlagsStorage(this), kShellDispatchOverlayList); break;
+            case 'G': toggleFlag(shellFlagsStorage(this), kShellDrawRelations); break;
             default: break;
             }
         }
@@ -1649,7 +1649,7 @@ namespace as1 { namespace win
         }
 
 
-        if (shellFlagsStorage(this) & kShellDispatchOverlayList)
+        if (shellFlagsStorage(this) & kShellDrawRelations)
         {
             SPRITE_COLLECTOR* const hash = GlobalSpriteCollector();
             core::List<SPRITE*>& list = hash->mutableOverflowList();
@@ -1911,7 +1911,7 @@ namespace as1 { namespace win
             }
         }
 
-        if (applicationFlags & kDebugDrawCurrentSprite)
+        if (applicationFlags & kDebugDrawSelectedSpriteInfo)
         {
 
 
@@ -1932,13 +1932,13 @@ namespace as1 { namespace win
                 selectedSprite->DrawDebugOverlay();
         }
 
-        if (applicationFlags & kDebugDrawScrollBox)
+        if (applicationFlags & kDebugDrawGroupNumbers)
         {
 
             map->groupOwner().DrawNumber();
         }
 
-        if (applicationFlags & kDebugDrawAuxiliaryList)
+        if (applicationFlags & kDebugDrawRouteMap)
         {
 
 
