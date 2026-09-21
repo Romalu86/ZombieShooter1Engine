@@ -2012,7 +2012,7 @@ namespace as1
                               int baseDepth, int blendFlag)
     {
 
-        if ((m_graphFlags & 0x04u) != 0u || ramp == nullptr ||
+        if ((m_graphFlags & 0x20u) != 0u || ramp == nullptr ||
             graphFcompC0(right, m_viewportLeft) ||
             !graphFcompC0(left, m_viewportRight) ||
             graphFcompC0(bottom, m_viewportTop) ||
@@ -2165,7 +2165,7 @@ namespace as1
         const int startX = (-(shiftX & 3)) & 3;
         const int startY = (-(shiftY & 3)) & 3;
 
-        if ((m_graphFlags & 0x04u) != 0u ||
+        if ((m_graphFlags & 0x20u) != 0u ||
             (core::ApplicationFlags() & application_flags::BucketTimingActive) != 0u)
             return;
 
@@ -2257,7 +2257,7 @@ namespace as1
             g_lineParticleCount = 0;
             return result;
         }
-        if ((m_graphFlags & 0x04u) != 0u)
+        if ((m_graphFlags & 0x20u) != 0u)
             return result;
         void* const applicationOwner = core::ApplicationOwner();
         result = static_cast<int>(static_cast<std::uint32_t>(
@@ -2319,9 +2319,9 @@ namespace as1
                 GraphWeatherVertex44& second = particle.vertex[1];
                 const bool active =
                     first.color != 0u &&
-                    first.x >= m_viewportLeft && first.x < m_viewportRight &&
-                    first.y >= m_viewportTop && first.y < m_viewportBottom &&
-                    first.z >= 0.015625f;
+                    (graphFcompC0(first.y, m_viewportBottom) ||
+                     graphFcompC3Equal(first.y, m_viewportBottom)) &&
+                    !graphFcompC0(first.z, 0.015625f);
 
                 if (active)
                 {
@@ -2383,7 +2383,7 @@ namespace as1
             g_crossParticleCount = 0;
             return result;
         }
-        if ((m_graphFlags & 0x04u) != 0u)
+        if ((m_graphFlags & 0x20u) != 0u)
             return result;
         void* const applicationOwner = core::ApplicationOwner();
         result = static_cast<int>(static_cast<std::uint32_t>(
