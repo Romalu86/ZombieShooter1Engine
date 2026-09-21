@@ -1,0 +1,572 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <ItemGroup>
+    <Filter Include="sources">
+      <UniqueIdentifier>{9807F9A3-7AC2-5C58-933A-A28AE0DCA23C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\3rdparty">
+      <UniqueIdentifier>{35560A3F-02E2-5C96-8FAC-71C56A03F35A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\core">
+      <UniqueIdentifier>{89F9988E-3155-529B-B73E-9FB75E505D09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\game">
+      <UniqueIdentifier>{96F58428-4A91-5E0C-993B-9AEF5CB2CA11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\graphics">
+      <UniqueIdentifier>{E06A9919-0566-56BA-BBE3-814FE5257E47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\images">
+      <UniqueIdentifier>{B23180DE-5856-5DAB-964A-01EB6D87DC83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\script">
+      <UniqueIdentifier>{983A7431-AFFB-5D36-8536-8B21A11B292A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\sound">
+      <UniqueIdentifier>{BF352818-DBB3-5BBF-9CA6-6CB1C08B933B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\vid">
+      <UniqueIdentifier>{EDA9B4AB-BE92-56E7-9B48-EF8B213B54B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\win">
+      <UniqueIdentifier>{AC85A8F1-8D64-518E-BF96-9B71B2F56C33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\zs1">
+      <UniqueIdentifier>{8CFA6F7A-F0D3-5D26-96A8-35CCE32F698E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\3rdparty\win">
+      <UniqueIdentifier>{881C81B2-BEA1-54D2-9D20-45487F3C4B2C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\win\imports">
+      <UniqueIdentifier>{A0163995-FAA0-52A0-82A7-AB2C676253DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\win\resources">
+      <UniqueIdentifier>{E864E71A-430A-5657-8B4C-BC8F0EEC4028}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\win\sound">
+      <UniqueIdentifier>{F0115DBC-39B1-5390-9C2F-4B01866BBC58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\3rdparty\win\libogg">
+      <UniqueIdentifier>{0BDEF7FE-D412-578C-AD17-F0071123308A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\3rdparty\win\libvorbis">
+      <UniqueIdentifier>{918D437F-221D-52FE-B675-0A0AE1FC7533}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\3rdparty\win\libogg\include">
+      <UniqueIdentifier>{9A20519C-162E-5BDF-A2C0-3DA163C40F9E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\3rdparty\win\libvorbis\include">
+      <UniqueIdentifier>{48B8FAC6-6267-5F73-8BDE-6982B1A0C76A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\3rdparty\win\libogg\include\ogg">
+      <UniqueIdentifier>{B03E696A-5CCC-55C9-A0E6-66697FAF112D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\3rdparty\win\libvorbis\include\vorbis">
+      <UniqueIdentifier>{BC5C63D1-EA9A-550B-8434-E052963BEDA0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\win\main.cpp">
+      <Filter>sources\win</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\win\application_win.cpp">
+      <Filter>sources\win</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\win\dialog_item.cpp">
+      <Filter>sources\win</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\win\main_sw.cpp">
+      <Filter>sources\win</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\core\as_string.cpp">
+      <Filter>sources\core</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\core\application.cpp">
+      <Filter>sources\core</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\core\crc32.cpp">
+      <Filter>sources\core</Filter>
+    </ClCompile>
+<ClCompile Include="sources\core\file_stream.cpp">
+      <Filter>sources\core</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\core\resource.cpp">
+      <Filter>sources\core</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\core\file_logger.cpp">
+      <Filter>sources\core</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\core\configuration.cpp">
+      <Filter>sources\core</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\zs1\zCommon.cpp">
+      <Filter>sources\zs1</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\zs1\zArg.cpp">
+      <Filter>sources\zs1</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\zs1\zArgList.cpp">
+      <Filter>sources\zs1</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\zs1\zUser.cpp">
+      <Filter>sources\zs1</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\zs1\zUserMngr.cpp">
+      <Filter>sources\zs1</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\zs1\zHighScores.cpp">
+      <Filter>sources\zs1</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\zs1\zHelpParser.cpp">
+      <Filter>sources\zs1</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\zs1\zDebugLog.cpp">
+      <Filter>sources\zs1</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\zs1\zScriptExec_engine.cpp">
+      <Filter>sources\zs1</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\zs1\zScriptExec.cpp">
+      <Filter>sources\zs1</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\core\weak_controller.cpp">
+      <Filter>sources\core</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\graphics\angle.cpp">
+      <Filter>sources\graphics</Filter>
+    </ClCompile>
+<ClCompile Include="sources\graphics\base_texture.cpp">
+      <Filter>sources\graphics</Filter>
+    </ClCompile>
+<ClCompile Include="sources\graphics\color.cpp">
+      <Filter>sources\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\graphics\gamma.cpp">
+      <Filter>sources\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\images\picture.cpp">
+      <Filter>sources\images</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\vid\vid.cpp">
+      <Filter>sources\vid</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\vid\vid_software.cpp">
+      <Filter>sources\vid</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\vid\vid_software16.cpp">
+      <Filter>sources\vid</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\vid\vid_hardware.cpp">
+      <Filter>sources\vid</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\vid\vid_hardware_z.cpp">
+      <Filter>sources\vid</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\vid\vid_surface.cpp">
+      <Filter>sources\vid</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\vid\vid_texcoor.cpp">
+      <Filter>sources\vid</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\vid\vid_light.cpp">
+      <Filter>sources\vid</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\vid\vid_font.cpp">
+      <Filter>sources\vid</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\map.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\constant.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\groups.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\player.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\player_arcade.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\message.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\base_sprite_list.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\unit.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\man.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\rail.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\building.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\depo.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\cannon.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\avia.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\creature.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\civ_robot.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\engine.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\balloon.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\ball.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\mouse.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\sprite.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\sprite_ptr.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\terrain.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\region.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\menu_item.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\compress.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\sprite_collector.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\graph.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\input.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\script_exec.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\script.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\script\stack_object.cpp">
+      <Filter>sources\script</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\win\sound\sound_engine_p_win.cpp">
+      <Filter>sources\win\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\core\profile_p.cpp">
+      <Filter>sources\core</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\core\log.cpp">
+      <Filter>sources\core</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\core\logger.cpp">
+      <Filter>sources\core</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\menu.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\sound\sound_engine.cpp">
+      <Filter>sources\sound</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sources\d3d8.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\game\startup.h">
+      <Filter>sources\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\core\as_string.h">
+      <Filter>sources\core</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\core\application.h">
+      <Filter>sources\core</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\core\crc32.h">
+      <Filter>sources\core</Filter>
+    </ClInclude>
+<ClInclude Include="sources\core\base_stream.h">
+      <Filter>sources\core</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\core\file_stream.h">
+      <Filter>sources\core</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\core\fourcc.h">
+      <Filter>sources\core</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\core\resource.h">
+      <Filter>sources\core</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\core\resource_filter.h">
+      <Filter>sources\core</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\core\configuration.h">
+      <Filter>sources\core</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\core\file_logger.h">
+      <Filter>sources\core</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\core\types.h">
+      <Filter>sources\core</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\core\weak_controller.h">
+      <Filter>sources\core</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\graphics\angle.h">
+      <Filter>sources\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\graphics\color.h">
+      <Filter>sources\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\graphics\gamma.h">
+      <Filter>sources\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\graphics\vector.h">
+      <Filter>sources\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\graphics\rect.h">
+      <Filter>sources\graphics</Filter>
+    </ClInclude>
+<ClInclude Include="sources\graphics\base_texture.h">
+      <Filter>sources\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\images\picture.h">
+      <Filter>sources\images</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\vid\vid.h">
+      <Filter>sources\vid</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\vid\vid_software.h">
+      <Filter>sources\vid</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\vid\vid_software16.h">
+      <Filter>sources\vid</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\vid\vid_hardware.h">
+      <Filter>sources\vid</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\vid\vid_hardware_z.h">
+      <Filter>sources\vid</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\vid\vid_surface.h">
+      <Filter>sources\vid</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\vid\vid_texcoor.h">
+      <Filter>sources\vid</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\vid\vid_light.h">
+      <Filter>sources\vid</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\vid\vid_font.h">
+      <Filter>sources\vid</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\mouse.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\map.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\weapon.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\constant.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\groups.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\player.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\player_arcade.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\message.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\base_sprite_list.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\unit.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\man.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\rail.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\building.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\depo.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\cannon.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\avia.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\creature.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\civ_robot.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\engine.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\balloon.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\ball.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\sprite.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\sprite_ptr.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\region.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\menu_item.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\builded_terrain.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\sprite_act_const.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\sprite_collector.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\graph.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\input.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\script\action_constants.h">
+      <Filter>sources\script</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\script.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\compress.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\script\stack_object.h">
+      <Filter>sources\script</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\script\native_function_codes.h">
+      <Filter>sources\script</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\script\vid_data_codes.h">
+      <Filter>sources\script</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\win\sound\sound_engine_p_win.h">
+      <Filter>sources\win\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\win\resources\resource.h">
+      <Filter>sources\win\resources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\win\application_win.h">
+      <Filter>sources\win</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\win\dialog_item.h">
+      <Filter>sources\win</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\win\main_sw.h">
+      <Filter>sources\win</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\3rdparty\win\libogg\include\ogg\ogg.h">
+      <Filter>sources\3rdparty\win\libogg\include\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\3rdparty\win\libvorbis\include\vorbis\codec.h">
+      <Filter>sources\3rdparty\win\libvorbis\include\vorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\3rdparty\win\libvorbis\include\vorbis\vorbisfile.h">
+      <Filter>sources\3rdparty\win\libvorbis\include\vorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\core\profile_p.h">
+      <Filter>sources\core</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\core\log.h">
+      <Filter>sources\core</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\core\logger.h">
+      <Filter>sources\core</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\core\logger_p.h">
+      <Filter>sources\core</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\menu.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\sound\sound_engine.h">
+      <Filter>sources\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\zs1\zCommon.h">
+      <Filter>sources\zs1</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\zs1\zArg.h">
+      <Filter>sources\zs1</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\zs1\zArgList.h">
+      <Filter>sources\zs1</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\zs1\zUser.h">
+      <Filter>sources\zs1</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\zs1\zUserMngr.h">
+      <Filter>sources\zs1</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\zs1\zHighScores.h">
+      <Filter>sources\zs1</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\zs1\zHelpParser.h">
+      <Filter>sources\zs1</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\zs1\zDebugLog.h">
+      <Filter>sources\zs1</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\zs1\zScriptExec_engine.h">
+      <Filter>sources\zs1</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\zs1\zScriptExec.h">
+      <Filter>sources\zs1</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sources\win\resources\ZombieShooter.res">
+      <Filter>sources\win\resources</Filter>
+    </None>
+    <None Include="sources\win\imports\d3d8.def">
+      <Filter>sources\win\imports</Filter>
+    </None>
+  </ItemGroup>
+</Project>
